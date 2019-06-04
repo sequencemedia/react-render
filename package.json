@@ -23,8 +23,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.4.5",
-    "@hapi/boom": "^7.4.2",
-    "react-router-render": "^1.0.0"
+    "@hapi/boom": "^7.4.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
