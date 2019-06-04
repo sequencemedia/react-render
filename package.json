@@ -13,6 +13,13 @@
     "url": "git://github.com/sequencemedia/react-render.git"
   },
   "license": "MIT",
+  "keywords": [
+    "React",
+    "isomorphic",
+    "render",
+    "renderToString",
+    "renderToStaticMarkup"
+  ],
   "scripts": {
     "build": "babel src -d lib",
     "build:watch": "babel src -d lib -w",
