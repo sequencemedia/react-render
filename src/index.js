@@ -1,6 +1,11 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import Boom from '@hapi/boom'
+import debug from 'debug'
+
+const log = debug('@sequencemedia/react-render')
+
+log('`react-render` is awake')
 
 const badImplementation = (e, data) => Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
 
@@ -12,6 +17,8 @@ const getReactDOMServerRenderToString = (Component, props) => {
       />
     )
   } catch (e) {
+    log(e)
+
     throw badImplementation(e, { props })
   }
 }
@@ -24,6 +31,8 @@ const getReactDOMServerRenderToStaticMarkup = (Component, props) => {
       />
     )
   } catch (e) {
+    log(e)
+
     throw badImplementation(e, { props })
   }
 }
