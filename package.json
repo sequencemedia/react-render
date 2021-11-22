@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-render",
-  "version": "2.0.47",
+  "version": "2.0.48",
   "description": "React Render",
   "keywords": [
     "React",
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=12.19.0"
+    "node": ">=16.13.0"
   },
   "repository": {
     "type": "git",
