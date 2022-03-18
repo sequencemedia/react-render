@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-render",
-  "version": "2.0.136",
+  "version": "2.0.137",
   "description": "React Render",
   "keywords": [
     "React",
@@ -39,7 +39,7 @@
   "dependencies": {
     "@babel/runtime": "^7.17.7",
     "@hapi/boom": "^9.1.4",
-    "debug": "^4.3.3"
+    "debug": "^4.3.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
