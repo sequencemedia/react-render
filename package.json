@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-render",
-  "version": "2.0.259",
+  "version": "2.0.260",
   "description": "React Render",
   "keywords": [
     "React",
@@ -58,7 +58,7 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.0",
+    "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.10",
     "gulp": "^4.0.2",
     "husky": "^8.0.1",
