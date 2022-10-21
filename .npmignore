@@ -20,3 +20,6 @@
 
 # Deps
 .depsrc
+# Build
+build
+gulpfile.*
