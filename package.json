@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-render",
-  "version": "2.0.268",
+  "version": "2.0.269",
   "description": "React Render",
   "keywords": [
     "React",
@@ -38,7 +38,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@babel/runtime": "^7.20.0",
+    "@babel/runtime": "^7.20.1",
     "@hapi/boom": "^10.0.0",
     "debug": "^4.3.4"
   },
