@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-render",
-  "version": "2.0.304",
+  "version": "2.0.305",
   "description": "React Render",
   "keywords": [
     "React",
@@ -64,6 +64,6 @@
     "husky": "^8.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^4.0.4"
   }
 }
