@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-render",
-  "version": "2.0.380",
+  "version": "2.0.381",
   "description": "React Render",
   "keywords": [
     "React",
@@ -54,7 +54,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/register": "^7.21.0",
     "core-js": "^3.30.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
