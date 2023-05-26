@@ -1,6 +1,11 @@
+import debug from 'debug'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import Boom from '@hapi/boom'
+
+const log = debug('@sequencemedia/react-render')
+
+log('`react-render` is awake')
 
 /**
  * @param {Error} e
