@@ -9,7 +9,7 @@ log('`react-render` is awake')
 
 const badImplementation = (e, data) => Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
 
-const getReactDOMServerRenderToString = (Component, props) => {
+function getReactDOMServerRenderToString (Component, props) {
   try {
     return ReactDOMServer.renderToString(
       <Component
@@ -23,7 +23,7 @@ const getReactDOMServerRenderToString = (Component, props) => {
   }
 }
 
-const getReactDOMServerRenderToStaticMarkup = (Component, props) => {
+function getReactDOMServerRenderToStaticMarkup (Component, props) {
   try {
     return ReactDOMServer.renderToStaticMarkup(
       <Component
@@ -38,12 +38,12 @@ const getReactDOMServerRenderToStaticMarkup = (Component, props) => {
 }
 
 /**
- * @return {String}
+ * @return {string}
  */
 export const renderToString = (Component, props = {}) => getReactDOMServerRenderToString(Component, props)
 
 /**
- * @return {String}
+ * @return {string}
  */
 export const renderToStaticMarkup = (Component, props = {}) => getReactDOMServerRenderToStaticMarkup(Component, props)
 
