@@ -8,6 +8,7 @@
 .eslintignore
 .eslintrc
 
+.gitattributes
 .github
 .gitignore
 

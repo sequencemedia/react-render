@@ -1,6 +1,4 @@
 module.exports = {
-  compact: true,
-  comments: false,
   presets: [
     [
       '@babel/env', {
@@ -12,10 +10,5 @@ module.exports = {
       }
     ],
     '@babel/react'
-  ],
-  plugins: [
-    '@babel/transform-runtime',
-    '@babel/proposal-export-default-from',
-    '@babel/proposal-export-namespace-from'
   ]
 }
