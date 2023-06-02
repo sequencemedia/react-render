@@ -10,7 +10,7 @@
 .eslintrc
 
 .gitattributes
-.github
+.gitattributes
 .gitignore
 
 # NPM
