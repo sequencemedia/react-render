@@ -9,7 +9,7 @@
 .eslintignore
 .eslintrc
 
-.gitattributes
+.github
 .gitattributes
 .gitignore
 
@@ -22,3 +22,6 @@
 
 # Deps
 .depsrc
+
+build
+test
