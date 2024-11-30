@@ -11,7 +11,7 @@ import Component from './component.cjs'
 
 use(sinonChai)
 
-describe('react-render', () => {
+describe('@sequencemedia/react-render', () => {
   describe('`renderToString`', () => {
     it('is a function', () => {
       return expect(renderToString)
