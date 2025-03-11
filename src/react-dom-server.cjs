@@ -1,5 +1,7 @@
 require('@babel/register')({
-  ignore: [/node_modules\/(?!@sequencemedia\/react-render)/]
+  ignore: [
+    /node_modules\/(?!@sequencemedia\/react-render)/
+  ]
 })
 
 const {

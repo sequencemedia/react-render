@@ -1,4 +1,7 @@
-import { use, expect } from 'chai'
+import {
+  use,
+  expect
+} from 'chai'
 import sinonChai from '@sequencemedia/sinon-chai'
 
 import {
@@ -53,7 +56,7 @@ describe('@sequencemedia/react-render', () => {
     })
 
     describe('`render()`', () => {
-      it('returns a Promise resolving to a string', async () => {
+      it('returns a string', async () => {
         return expect(await render(Component, props))
           .to.equal('<h1>Component <!-- -->MOCK CONTENT</h1>')
       })
@@ -76,7 +79,7 @@ describe('@sequencemedia/react-render', () => {
     })
 
     describe('`render()`', () => {
-      it('returns a Promise resolving to a string', async () => {
+      it('returns a string', async () => {
         return expect(await render(Component))
           .to.equal('<h1>Component</h1>')
       })

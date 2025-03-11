@@ -1,3 +1,8 @@
+/**
+ *  @typedef {ReactRenderTypes.ComponentType} ComponentType
+ *  @typedef {ReactRenderTypes.PropsType} PropsType
+ */
+
 import debug from 'debug'
 
 import {
@@ -10,22 +15,34 @@ const log = debug('@sequencemedia/react-render')
 log('`react-render` is awake')
 
 /**
- * @param {React.ReactElement} Component
- * @param {Object.<string, any>} props
- * @returns {string}
+ *  @param {ComponentType} Component
+ *  @param {PropsType} props
+ *  @returns {string}
  */
-export const renderToString = (Component, props = {}) => getReactDOMServerRenderToString(Component, props)
+export function renderToString (Component, props = {}) {
+  return (
+    getReactDOMServerRenderToString(Component, props)
+  )
+}
 
 /**
- * @param {React.ReactElement} Component
- * @param {Object.<string, any>} props
- * @returns {string}
+ *  @param {ComponentType} Component
+ *  @param {PropsType} props
+ *  @returns {string}
  */
-export const renderToStaticMarkup = (Component, props = {}) => getReactDOMServerRenderToStaticMarkup(Component, props)
+export function renderToStaticMarkup (Component, props = {}) {
+  return (
+    getReactDOMServerRenderToStaticMarkup(Component, props)
+  )
+}
 
 /**
- * @param {React.ReactElement} Component
- * @param {Object.<string, any>} props
- * @returns {Promise<string>}
+ *  @param {ComponentType} Component
+ *  @param {PropsType} props
+ *  @returns {string}
  */
-export const render = async (Component, props = {}) => getReactDOMServerRenderToString(Component, props)
+export function render (Component, props = {}) {
+  return (
+    getReactDOMServerRenderToString(Component, props)
+  )
+}

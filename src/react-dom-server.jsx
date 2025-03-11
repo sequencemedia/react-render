@@ -1,3 +1,16 @@
+/**
+ *  @typedef {ReactRenderTypes.ComponentType} ComponentType
+ *  @typedef {ReactRenderTypes.PropsType} PropsType
+ *
+ *  @typedef {{
+ *    props: PropsType
+ *  }} PropsException
+ *
+ *  @typedef {{
+ *    e: unknown
+ *  }} Exception
+ */
+
 import debug from 'debug'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
@@ -8,16 +21,20 @@ const log = debug('@sequencemedia/react-render')
 log('`react-render` is awake')
 
 /**
- * @param {Error} e
- * @param {{props: Object.<string, any>}} data
- * @returns A boom object
+ *  @param {Error} e
+ *  @param {PropsException | Exception} data
+ *  @returns A boom object
  */
-const badImplementation = (e, data) => Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
+function badImplementation (e, data) {
+  return (
+    Boom.boomify(e, { statusCode: 500, message: 'Rendering exception', data })
+  )
+}
 
 /**
- * @param {React.ReactElement} Component
- * @param {Object.<string, any>} props
- * @returns {string}
+ *  @param {ComponentType} Component
+ *  @param {PropsType} props
+ *  @returns {string}
  */
 export function getReactDOMServerRenderToString (Component, props) {
   try {
@@ -27,16 +44,15 @@ export function getReactDOMServerRenderToString (Component, props) {
       />
     )
   } catch (e) {
-    log(e)
-
-    throw badImplementation(e, { props })
+    if (e instanceof Error) throw badImplementation(e, { props })
+    throw badImplementation(new Error('Exception'), { e })
   }
 }
 
 /**
- * @param {React.ReactElement} Component
- * @param {Object.<string, any>} props
- * @returns {string}
+ *  @param {ComponentType} Component
+ *  @param {PropsType} props
+ *  @returns {string}
  */
 export function getReactDOMServerRenderToStaticMarkup (Component, props) {
   try {
@@ -46,8 +62,7 @@ export function getReactDOMServerRenderToStaticMarkup (Component, props) {
       />
     )
   } catch (e) {
-    log(e)
-
-    throw badImplementation(e, { props })
+    if (e instanceof Error) throw badImplementation(e, { props })
+    throw badImplementation(new Error('Exception'), { e })
   }
 }
