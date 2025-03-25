@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/react-render",
-  "version": "2.4.8",
+  "version": "2.4.9",
   "description": "React Render",
   "keywords": [
     "React",
@@ -37,20 +37,20 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
-    "@babel/eslint-parser": "^7.26.10",
+    "@babel/eslint-parser": "^7.27.0",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
     "@babel/register": "^7.25.9",
-    "@sequencemedia/eslint-config-standard": "^0.2.44",
-    "@sequencemedia/eslint-config-typescript": "^0.1.65",
+    "@sequencemedia/eslint-config-standard": "^0.2.45",
+    "@sequencemedia/eslint-config-typescript": "^0.1.66",
     "@sequencemedia/sinon-chai": "^0.0.136",
     "@types/babel__register": "^7.17.3",
     "@types/debug": "^4.1.12",
     "@types/prop-types": "^15.7.14",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
-    "@typescript-eslint/eslint-plugin": "^8.27.0",
-    "@typescript-eslint/parser": "^8.27.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
     "chai": "^5.2.0",
     "core-js": "^3.41.0",
     "eslint": "^9.23.0",
@@ -61,7 +61,7 @@
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sinon": "^19.0.4"
+    "sinon": "^20.0.0"
   },
   "exports": {
     ".": "./src/index.mjs"
