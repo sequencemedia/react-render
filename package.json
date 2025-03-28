@@ -59,8 +59,8 @@
     "husky": "^9.1.7",
     "mocha": "^11.1.0",
     "prop-types": "^15.8.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "sinon": "^20.0.0"
   },
   "exports": {
