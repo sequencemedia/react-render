@@ -48,7 +48,7 @@
     "@types/debug": "^4.1.12",
     "@types/prop-types": "^15.7.14",
     "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "chai": "^5.2.0",
