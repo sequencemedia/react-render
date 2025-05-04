@@ -63,7 +63,12 @@
     "react-dom": "^19.1.0",
     "sinon": "^20.0.0"
   },
+  "imports": {
+    "#react-render": "./src/index.mjs",
+    "#react-render/react-dom-server": "./src/react-dom-server.cjs"
+  },
   "exports": {
-    ".": "./src/index.mjs"
+    ".": "./src/index.mjs",
+    "./react-dom-server": "./src/react-dom-server.cjs"
   }
 }
