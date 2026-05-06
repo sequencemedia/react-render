@@ -38,7 +38,7 @@
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@babel/eslint-parser": "^7.28.6",
-    "@babel/preset-env": "^7.29.3",
+    "@babel/preset-env": "^7.29.5",
     "@babel/preset-react": "^7.28.5",
     "@babel/register": "^7.29.3",
     "@sequencemedia/eslint-config-standard": "^0.2.107",
@@ -61,7 +61,7 @@
     "prop-types": "^15.8.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "sinon": "^21.1.2"
+    "sinon": "^22.0.0"
   },
   "imports": {
     "#react-render": "./src/index.mjs",
